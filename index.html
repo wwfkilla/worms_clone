@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worms Armageddon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div id="hud-top">
+                <div id="hud-turn-info">
+                    <span id="turn-label">Player Turn</span>
+                    <div id="wind-bar-container"><div id="wind-bar"></div></div>
+                </div>
+                <div id="hud-timer">45</div>
+            </div>
+            <div id="hud-bottom">
+                <div id="weapon-display">Bazooka</div>
+            </div>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1 id="winner-text">Game Over</h1>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
